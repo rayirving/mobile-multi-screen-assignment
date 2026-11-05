@@ -6,6 +6,8 @@ const TabLayout = () => {
       <Tabs.Screen
         name="(home)"
         options={{
+          title: "Home",
+
           headerShown: true,
           headerTitle: "Letterboxd",
           headerTitleAlign: "center",

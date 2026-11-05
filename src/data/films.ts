@@ -10,7 +10,7 @@ export type Film = {
   genres: string[];
 };
 
-const films: Film[] = [
+export const filmList: Film[] = [
   {
     id: "1",
     title: "Parasite",
