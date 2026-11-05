@@ -5,6 +5,7 @@ const Index = () => {
     <View style={styles.container}>
       <Text>Edit src/app/index.tsx to edit this screen.</Text>
     </View>
+    <ReviewCard></ReviewCard>
   );
 };
 

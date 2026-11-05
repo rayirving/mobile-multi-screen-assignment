@@ -7,16 +7,7 @@ const TabLayout = () => {
         name="(home)"
         options={{
           title: "Home",
-
-          headerShown: true,
-          headerTitle: "Letterboxd",
-          headerTitleAlign: "center",
-
-          headerStyle: {
-            elevation: 0,       // Removes shadow on android screen
-            shadowOpacity: 0,   // Removes shadow on apple screen
-
-          },
+          headerShown: false,
         }}
       />
       <Tabs.Screen

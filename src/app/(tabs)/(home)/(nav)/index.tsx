@@ -14,7 +14,7 @@ type RowTypes = {
 const Row = ({ films, onFilmPress }: RowTypes) => (
   <View style={styles.gridRow}>
     {films.map((item) => (
-      <PosterCard film={item} onFilmPress={onFilmPress} />
+      <PosterCard key={item.id} film={item} onFilmPress={onFilmPress} />
     ))}
   </View>
 );
@@ -124,5 +124,4 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     gap: 8,
   },
-  
 });

@@ -12,7 +12,6 @@ type RowTypes = {
 const PosterCard = ({ film, onFilmPress }: RowTypes) => (
   <Pressable
     style={styles.posterContainer}
-    key={film.id}
     onPress={() => onFilmPress(film.id)}
   >
     <Image style={styles.posterImage} source={{ uri: film.posterURL }} />
