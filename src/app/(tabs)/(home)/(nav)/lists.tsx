@@ -1,14 +1,14 @@
 import { StyleSheet, Text, View } from "react-native";
 
-const Index = () => {
+const Lists = () => {
   return (
     <View style={styles.container}>
-      <Text>Edit src/app/index.tsx to edit this screen.</Text>
+      <Text style={styles.loginText}>Login to Letterbox to view Lists</Text>
     </View>
   );
 };
 
-export default Index;
+export default Lists;
 
 const styles = StyleSheet.create({
   container: {
@@ -16,4 +16,8 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
+  loginText: {
+    fontWeight: 800,
+    fontSize: 18,
+  }
 });
