@@ -16,7 +16,15 @@ const TabLayout = () => {
       />
       <Tabs.Screen
         name="review"
-        options={{ headerShown: false, title: "Review" }}
+        options={{
+          headerShown: false,
+          title: "Review",
+          tabBarStyle: {
+            display: "none",
+          },
+          popToTopOnBlur: true,
+        }}
+      
       />
       <Tabs.Screen
         name="activity"
