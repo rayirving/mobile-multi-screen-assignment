@@ -2,7 +2,7 @@ import { StyleSheet, Text, View } from "react-native";
 
 const Lists = () => {
   return (
-    <View style={styles.container}>
+    <View style={styles.screen}>
       <Text style={styles.loginText}>Login to Letterbox to view Lists</Text>
     </View>
   );
@@ -11,13 +11,15 @@ const Lists = () => {
 export default Lists;
 
 const styles = StyleSheet.create({
-  container: {
+  screen: {
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
+    backgroundColor: "#14181c",
   },
   loginText: {
     fontWeight: 800,
     fontSize: 18,
+    color: "#d8dfe6",
   }
 });

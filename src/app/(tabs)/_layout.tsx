@@ -20,7 +20,7 @@ const TabLayout = () => {
       />
       <Tabs.Screen
         name="activity"
-        options={{ headerShown: false, title: "activity" }}
+        options={{ headerShown: false, title: "Activity" }}
       />
       <Tabs.Screen
         name="profile"

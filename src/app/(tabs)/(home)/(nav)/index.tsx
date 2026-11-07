@@ -46,7 +46,7 @@ const Films = () => {
   ];
 
   return (
-    <ScrollView>
+    <ScrollView contentContainerStyle={styles.screen} >
       <Pressable style={styles.promoSection}>
         <View style={styles.promoTag}>
           <Text style={styles.promoTagText}>PRO</Text>
@@ -68,7 +68,6 @@ const Films = () => {
           <Row key={index} films={row} onFilmPress={openFilm} />
         ))}
       </View>
-      <Pressable></Pressable>
       <ScrollView></ScrollView>
     </ScrollView>
   );
@@ -77,13 +76,16 @@ const Films = () => {
 export default Films;
 
 const styles = StyleSheet.create({
+  screen: {
+    backgroundColor: "#14181c"
+  },
   promoSection: {
     paddingHorizontal: 16,
     paddingVertical: 8,
     flexDirection: "row",
     gap: 12,
     alignItems: "center",
-    backgroundColor: "#999999",
+    backgroundColor: "#2c3440",
   },
   promoTextContainer: {
     flex: 1,
@@ -91,16 +93,17 @@ const styles = StyleSheet.create({
   },
   promoText: {
     fontSize: 12,
+    color: "#d8dfe6"
   },
   promoTag: {
     borderRadius: 4,
-    backgroundColor: "#da8a35",
-    paddingVertical: 4,
-    paddingHorizontal: 8,
+    backgroundColor: "#ff8000",
+    paddingVertical: 2,
+    paddingHorizontal: 6,
   },
   promoTagText: {
     color: "#FFFFFF",
-    fontWeight: 800,
+    fontWeight: 900,
     letterSpacing: 1.5,
     fontSize: 16,
   },
@@ -115,6 +118,7 @@ const styles = StyleSheet.create({
   sectionHeaderText: {
     fontWeight: 800,
     fontSize: 18,
+    color: "#d8dfe6",
   },
   gridContainer: {
     gap: 8,

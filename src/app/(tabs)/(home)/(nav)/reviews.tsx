@@ -22,7 +22,7 @@ const Reviews = () => {
   };
 
   return (
-    <View>
+    <View style={styles.screen}>
       <FlatList
         data={reviews}
         keyExtractor={(item) => item.id}
@@ -46,6 +46,10 @@ const Reviews = () => {
 export default Reviews;
 
 const styles = StyleSheet.create({
+  screen: {
+    backgroundColor: "#14181c"
+  },
+
   reviewList: {
     paddingHorizontal: 16,
   },
@@ -59,9 +63,10 @@ const styles = StyleSheet.create({
   sectionHeaderText: {
     fontWeight: 800,
     fontSize: 18,
+    color: "#d8dfe6",
   },
   divider: {
-    backgroundColor:"#53606c",
+    backgroundColor:"#2c3440",
     height: 1,
     alignSelf: "stretch"
   }

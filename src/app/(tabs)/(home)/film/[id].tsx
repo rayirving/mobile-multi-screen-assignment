@@ -26,7 +26,7 @@ const FilmScreen = () => {
   if (!film) return <Text>Film not Found</Text>;
 
   return (
-    <ScrollView>
+    <ScrollView contentContainerStyle={styles.screen}>
       <View>
         <Image style={styles.bannerImage} source={{ uri: film.bannerURL }} />
       </View>
@@ -38,8 +38,8 @@ const FilmScreen = () => {
             <Text style={styles.directorText}>{film.director}</Text>
           </View>
           <View style={styles.filmRunSection}>
-            <Text>TRAILER</Text>
-            <Text>{film.runtime} mins</Text>
+            <Text style={styles.filmTailerText}>TRAILER</Text>
+            <Text style={styles.filmTailerText}>{film.runtime} mins</Text>
           </View>
         </View>
         <View style={styles.posterContainer}>
@@ -49,7 +49,7 @@ const FilmScreen = () => {
       <View style={styles.filmDescSection}>
         <Text style={styles.filmInfoText}>{film.description}</Text>
       </View>
-      <View></View>
+      <View style={styles.divider}></View>
       <View></View>
       <View></View>
     </ScrollView>
@@ -59,6 +59,10 @@ const FilmScreen = () => {
 export default FilmScreen;
 
 const styles = StyleSheet.create({
+  screen: {
+    backgroundColor: "#14181c",
+    flex: 1,
+  },
   filmTopSection: {
     flexDirection: "row",
     justifyContent: "space-between",
@@ -83,14 +87,20 @@ const styles = StyleSheet.create({
   filmNameText: {
     fontWeight: 900,
     fontSize: 24,
+    color: "#d8dfe6"
   },
   filmInfoText: {
     fontSize: 12,
-    letterSpacing: 0.8
+    letterSpacing: 0.8,
+    color: "#99aabb"
   },
   directorText: {
     fontWeight: 800,
-    fontSize: 14
+    fontSize: 14,
+    color: "#99aabb"
+  },
+  filmTailerText: {
+    color: "#d8dfe6"
   },
   posterContainer: {
     width: 100,
@@ -105,4 +115,10 @@ const styles = StyleSheet.create({
     width: "100%",
     aspectRatio: 16 / 9,
   },
+  divider: {
+    backgroundColor:"#2c3440",
+    height: 1,
+    alignSelf: "stretch",
+    margin: 16
+  }
 });

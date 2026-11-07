@@ -5,7 +5,20 @@ export default function HomeStack() {
     <Stack>
       <Stack.Screen
         name="(nav)"
-        options={{ title: "Letterboxd", headerTitleAlign: "center" }}
+        options={{
+          title: "Letterboxd",
+          headerTitleAlign: "center",
+          headerShadowVisible: false,
+          headerTitleStyle: {
+            fontWeight: 900,
+            fontSize: 26,
+            color: "#d8dfe6"
+          },
+          headerStyle: {
+            backgroundColor: "#000000",
+          }
+          
+        }}
       />
       <Stack.Screen
         name="film/[id]"

@@ -18,10 +18,10 @@ const ReviewCard = ({ review, onFilmPress }: ReviewCardType) => {
       <View style={styles.cardHeader}>
         <View style={styles.cardHeaderFilm}>
           <Text style={styles.filmText}>{film.title}</Text>
-          <Text>{film.year}</Text>
+          <Text style={styles.filmBodyText}>{film.year}</Text>
         </View>
         <View style={styles.cardHeaderUser}>
-          <Text>{review.username}</Text>
+          <Text style={styles.filmBodyText}>{review.username}</Text>
           <View style={styles.avatarContainer}>
             <Image
               style={styles.avatarImage}
@@ -90,15 +90,20 @@ const styles = StyleSheet.create({
   },
   reviewText: {
     flex: 1,
+    color: "#667788"
   },
   filmText: {
     fontWeight: 600,
     fontSize: 16,
+    color: "#99aabb"
   },
   ratingText: {
     fontSize: 12,
     fontWeight: 600,
-    color: "#508027",
+    color: "#00e054",
     paddingBottom: 4,
   },
+  filmBodyText: {
+    color: "#667788"
+  }
 });
