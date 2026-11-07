@@ -3,8 +3,8 @@ import { StyleSheet, Text, View } from "react-native";
 const Lists = () => {
   return (
     <View style={styles.screen}>
-      <Text style={styles.loginText}>No Results.</Text>
-      <Text style={styles.loginText}>Log in to Letterbox to see your activity.</Text>
+      <Text style={styles.loginText}>No Lists.</Text>
+      <Text style={styles.loginText}>Log in to Letterbox create lists.</Text>
     </View>
   );
 };
@@ -22,5 +22,5 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: "#667788",
     marginVertical: 4,
-  }
+  },
 });

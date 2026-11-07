@@ -3,8 +3,8 @@ import { StyleSheet, Text, View } from "react-native";
 const Watchlist = () => {
   return (
     <View style={styles.screen}>
-      <Text style={styles.loginText}>No Results.</Text>
-      <Text style={styles.loginText}>Log in to Letterbox to see your activity.</Text>
+      <Text style={styles.loginText}>No Films in Watchlist.</Text>
+      <Text style={styles.loginText}>Log in to Letterbox to add films to your watchlist.</Text>
     </View>
   );
 };

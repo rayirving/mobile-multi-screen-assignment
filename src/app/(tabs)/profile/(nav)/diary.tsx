@@ -3,8 +3,10 @@ import { StyleSheet, Text, View } from "react-native";
 const Diary = () => {
   return (
     <View style={styles.screen}>
-      <Text style={styles.loginText}>No Results.</Text>
-      <Text style={styles.loginText}>Log in to Letterbox to see your incoming activity.</Text>
+      <Text style={styles.loginText}>No Diary Entries.</Text>
+      <Text style={styles.loginText}>
+        Log in to Letterbox to create diary entries.
+      </Text>
     </View>
   );
 };
@@ -22,5 +24,5 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: "#667788",
     marginVertical: 4,
-  }
+  },
 });
